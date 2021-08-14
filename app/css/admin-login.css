@@ -1,0 +1,77 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  width: 320px;
+  height: 460px;
+  margin: auto;
+  margin-top: 11%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ebe2fd;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  /*  Ошибка при некоректном заполнении формы
+  .error{
+      margin-top: 20px;    
+      color: red;
+      font-size: 18px;
+  } 
+  */
+}
+form .icon {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+form h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+form .form-group {
+  text-align: center;
+}
+form .form-group label {
+  font-size: 20px;
+}
+form .form-group input {
+  width: 265px;
+  height: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  padding-left: 5px;
+  margin-top: 10px;
+  border: none;
+}
+form .form-group2 {
+  margin-top: 10px;
+}
+form .btn-wrap {
+  margin-top: auto;
+}
+form .btn-wrap .btn {
+  width: 120px;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#9C87C8), to(#89C6E8));
+  background: linear-gradient(to right, #9C87C8, #89C6E8);
+  border: none;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+form a {
+  font-size: 18px;
+  margin-bottom: 10px;
+}

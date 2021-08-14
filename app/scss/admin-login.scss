@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+$purple: #9C87C8;
+$blue: #89C6E8;
+$pink: #ebe2fd;
+$gradient: linear-gradient(to right, $purple, $blue);
+$main-font: 'Montserrat', sans-serif;
+
+form{
+    width: 320px;
+    height: 460px;
+    margin: auto;
+    margin-top: 11%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $pink;
+    border-radius: 20px;
+
+    font-family: $main-font;
+
+    .icon{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    h2{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .form-group{
+        
+        text-align: center;
+
+        label{font-size: 20px;}
+
+        input{
+            width: 265px;
+            height: 30px;
+            font-family: $main-font;
+            font-size: 24px;
+            padding-left: 5px;
+            margin-top: 10px; 
+            border: none;
+           
+        }
+    }
+
+    .form-group2{
+        margin-top: 10px;
+    }
+
+     /*  Ошибка при некоректном заполнении формы
+    .error{
+        margin-top: 20px;    
+        color: red;
+        font-size: 18px;
+    } 
+    */
+
+    .btn-wrap{
+        margin-top: auto;
+
+        .btn{
+            width: 120px;
+            height: 50px;
+            background: $gradient;
+            border: none;
+            border-radius: 50px;
+            margin-bottom: 15px;
+
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    a{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+}

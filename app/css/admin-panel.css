@@ -1,0 +1,605 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6EBEE6;
+}
+header .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header__logo img {
+  margin-left: 20px;
+}
+header .header__logo .logo__text-logo a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  color: linear-gradient(to right, #9C87C8, #89C6E8);
+}
+header .nav-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .nav-wrap li {
+  list-style: none;
+}
+header .nav-wrap .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+header .nav-wrap .nav li {
+  margin-right: 10px;
+}
+header .nav-wrap .nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+header .nav-wrap .nav li a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #9C87C8;
+          text-decoration-color: #9C87C8;
+}
+header .nav-wrap .return {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+header .nav-wrap .return:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #9C87C8;
+          text-decoration-color: #9C87C8;
+}
+header .logout {
+  margin-right: 40px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+header .logout:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #9C87C8;
+          text-decoration-color: #9C87C8;
+}
+
+section {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.container {
+  /* Контейнер */
+  width: 1600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main hr {
+  background-color: #6EBEE6;
+  height: 3px;
+  border: none;
+}
+main .social-networks {
+  width: 100%;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+main .social-networks h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+main .social-networks table thead th {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+main .social-networks table tbody .social-networks__btn {
+  text-align: center;
+}
+main .social-networks table tbody .social-networks__btn a {
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background-color: #6EBEE6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
+}
+main .social-networks table tbody .social-networks__btn a:hover {
+  background-color: #7dd3fd;
+}
+main .first-screen {
+  width: 100%;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .first-screen h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+main .first-screen table thead th {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+main .first-screen table tbody .first-screen__btn {
+  text-align: center;
+}
+main .first-screen table tbody .first-screen__btn a {
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background-color: #6EBEE6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
+}
+main .first-screen table tbody .first-screen__btn a:hover {
+  background-color: #7dd3fd;
+}
+main .doctors {
+  width: 100%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+main .doctors__title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+main .doctors__title-add {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+main .doctors table thead th {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+main .doctors table tbody td {
+  padding-bottom: 20px;
+  text-align: center;
+}
+main .doctors table tbody .doctors__btn-group .btn-group {
+  list-style: none;
+}
+main .doctors table tbody .doctors__btn-group .btn-group li {
+  margin-bottom: 25px;
+}
+main .doctors table tbody .doctors__btn-group .btn-group li a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 30px;
+}
+main .doctors table tbody .doctors__btn-group .btn-group li .link {
+  background-color: #6EBEE6;
+}
+main .doctors table tbody .doctors__btn-group .btn-group li .link2 {
+  background: #9C87C8;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+main .doctors table tbody .doctors__btn-group .btn-group li .link:hover {
+  background-color: #7dd3fd;
+}
+main .doctors table tbody .doctors__btn-group .btn-group li .link2:hover {
+  background-color: #b9a0ee;
+}
+main .doctors form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .doctors form .doctors__form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .doctors form .doctors__form-item label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+main .doctors form .doctors__form-item input {
+  width: 900px;
+  min-height: 26px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding: 3px;
+  margin-bottom: 20px;
+}
+main .doctors form button {
+  width: 130px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #6EBEE6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
+  cursor: pointer;
+}
+main .doctors form button:hover {
+  background-color: #7dd3fd;
+}
+main .about-us {
+  width: 100%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .about-us h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+main .about-us table thead th {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+main .about-us table tbody td {
+  padding-bottom: 25px;
+  text-align: center;
+}
+main .about-us table tbody .about-us__btn {
+  text-align: center;
+}
+main .about-us table tbody .about-us__btn a {
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background-color: #6EBEE6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
+}
+main .about-us table tbody .about-us__btn a:hover {
+  background-color: #7dd3fd;
+}
+main .services {
+  width: 100%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .services h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+main .services table thead th {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+main .services table tbody td {
+  padding-bottom: 25px;
+  text-align: center;
+}
+main .services table tbody .services__btn {
+  text-align: center;
+}
+main .services table tbody .services__btn a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #6EBEE6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
+}
+main .services table tbody .services__btn a:hover {
+  background-color: #7dd3fd;
+}
+main .reviews {
+  width: 100%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .reviews h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+main .reviews .reviews__title-add {
+  margin-top: 25px;
+  font-size: 20px;
+}
+main .reviews table thead th {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+main .reviews table tbody td {
+  padding-bottom: 25px;
+  text-align: center;
+}
+main .reviews table tbody .reviews__btn-group .btn-group {
+  list-style: none;
+}
+main .reviews table tbody .reviews__btn-group .btn-group li {
+  margin-bottom: 25px;
+}
+main .reviews table tbody .reviews__btn-group .btn-group li a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 30px;
+}
+main .reviews table tbody .reviews__btn-group .btn-group li .link {
+  background-color: #6EBEE6;
+}
+main .reviews table tbody .reviews__btn-group .btn-group li .link2 {
+  background: #9C87C8;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+main .reviews table tbody .reviews__btn-group .btn-group li .link:hover {
+  background-color: #7dd3fd;
+}
+main .reviews table tbody .reviews__btn-group .btn-group li .link2:hover {
+  background-color: #b9a0ee;
+}
+main .reviews form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .reviews form .reviews__form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+main .reviews form .reviews__form-item label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+main .reviews form .reviews__form-item input {
+  width: 900px;
+  min-height: 26px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding: 3px;
+}
+main .reviews form .reviews__form-item textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding: 5px;
+}
+main .reviews form button {
+  width: 130px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #6EBEE6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
+  cursor: pointer;
+}
+main .reviews form button:hover {
+  background-color: #7dd3fd;
+}
+main .contacnts {
+  width: 100%;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+main .contacnts h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+main .contacnts table thead th {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+main .contacnts table tbody .contacnts__btn {
+  text-align: center;
+}
+main .contacnts table tbody .contacnts__btn a {
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background-color: #6EBEE6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
+}
+main .contacnts table tbody .contacnts__btn a:hover {
+  background-color: #7dd3fd;
+}
+main footer {
+  width: 100%;
+  height: 100px;
+  background-color: #383838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main footer .footer__nav-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+}
+main footer .footer__nav-block li {
+  list-style: none;
+  margin-right: 10px;
+}
+main footer .footer__nav-block li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+main footer .footer__nav-block li a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #9C87C8;
+          text-decoration-color: #9C87C8;
+}
